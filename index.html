@@ -7,6 +7,7 @@
   <meta name="description" content="The Neon Team" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Keep Inter as a fallback. Prefer Avenir/Avenir Next if available on the system. -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
@@ -20,30 +21,42 @@
       --glow3:#67f28f;
     }
     *{box-sizing:border-box}
-    body{margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--fg); background:#fff;}
+    body{margin:0; font-family:"Avenir Next", Avenir, Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:#fff;}
     a{color:var(--link); text-decoration:none}
     a:hover{text-decoration:underline}
     .wrap{max-width:1180px; margin:0 auto; padding:40px 24px 80px}
-    header{text-align:center; padding:20px 0; border-bottom:1px solid var(--line)}
+
+    /* Header */
+    header{text-align:center; padding:20px 0 8px; border-bottom:1px solid var(--line)}
     header img{max-width:220px; height:auto}
-    .social{display:flex; gap:16px; justify-content:center; margin:24px 0 32px}
+    .accent{height:4px; width:220px; margin:16px auto 20px; border-radius:4px; background:linear-gradient(90deg,var(--glow1),var(--glow2),var(--glow3)); opacity:.85}
+
+    /* Social */
+    .social{display:flex; gap:16px; justify-content:center; margin:20px 0 28px}
     .pill{display:inline-flex; align-items:center; gap:8px; padding:10px 16px; border:1px solid var(--line); border-radius:999px; font-weight:600; background:#fff; font-size:15px}
+
+    /* Main card */
     .about{margin:0 auto; max-width:1000px; border:1px solid var(--line); border-radius:14px; padding:32px 28px; text-align:center; background:#fff; box-shadow:0 8px 28px rgba(0,0,0,.05)}
-    .about h2{font-size:22px; margin:0 0 14px}
-    .about h3{font-size:18px; margin:20px 0 12px}
-    .about p{margin:0 0 16px; line-height:1.6; font-size:16px}
-    .accent{height:4px; width:100%; border-radius:4px; background:linear-gradient(90deg,var(--glow1),var(--glow2),var(--glow3)); opacity:.8; margin:18px 0 22px}
-    .team-grid{display:flex; gap:28px; justify-content:center; flex-wrap:wrap; margin:24px 0}
+    .about p{margin:0 0 16px; line-height:1.68; font-size:16px}
+
+    /* Unified headings */
+    .section-title{font-weight:700; letter-spacing:.2px; text-transform:capitalize;}
+    .section-title.lg{font-size:18px; margin:36px 0 12px}
+
+    /* Team */
+    .team-grid{display:flex; gap:28px; justify-content:center; flex-wrap:wrap; margin:16px 0 8px}
     .team-card{flex:1 1 240px; max-width:280px; border:1px solid var(--line); border-radius:12px; padding:20px; text-align:center; background:#fff; box-shadow:0 3px 8px rgba(0,0,0,.04)}
     .team-avatar{width:96px; height:96px; border-radius:50%; background:#f3f4f6; margin:0 auto 12px; display:flex; align-items:center; justify-content:center; overflow:hidden}
     .team-avatar img{width:100%; height:100%; object-fit:cover; border-radius:50%}
     .profile-title{font-weight:700; font-size:16px; margin-bottom:6px}
     .team-card .sub{font-size:14px; color:var(--muted); margin-bottom:10px}
-    .team-card a{font-size:14px; font-weight:600;}
-    .embed-grid{display:grid; gap:20px; grid-template-columns:repeat(2,minmax(0,1fr)); margin-top:16px}
+
+    /* Embeds */
+    .embed-grid{display:grid; gap:20px; grid-template-columns:repeat(2,minmax(0,1fr)); margin-top:12px}
     @media (max-width:1020px){.embed-grid{grid-template-columns:1fr}}
     .embed{display:flex; justify-content:center}
     .embed iframe{width:560px; max-width:100%; border:0}
+
     footer{text-align:center; margin-top:40px; padding-top:20px; border-top:1px solid var(--line); color:#6b7280; font-size:14px}
   </style>
 </head>
@@ -51,6 +64,7 @@
   <div class="wrap">
     <header>
       <img src="logo.png" alt="Neon logo" />
+      <div class="accent" aria-hidden="true"></div>
     </header>
 
     <nav class="social">
@@ -60,15 +74,15 @@
     </nav>
 
     <section class="about">
-      <h2>About Neon</h2>
-      <div class="accent"></div>
+      <!-- Removed the "About Neon" heading as requested -->
       <p>Neon is a global payments and e‑commerce platform built to give game publishers more revenue and independence from app stores. We believe commerce should be open and transparent—clear data, aligned incentives, and actionable insights.</p>
       <p>Founded by veterans of payments, fintech, and gaming, Neon is replacing black‑box incumbents with modern, developer‑first infrastructure. We share the playbook, co‑pilot key decisions, and take on the risk and complexity so our partners can focus on players.</p>
-      <h3>Why join</h3>
+
+      <h3 class="section-title lg">Why Join</h3>
       <p>As an early team member you’ll shape both the product and the culture. You’ll work alongside colleagues from Apple, Affirm, Unity, Visa and others, backed by investors including Thrive, a16z, Griffin Gaming, Ribbit, and Renegade. Your work will have direct impact on Neon’s growth and on the success of game creators worldwide.</p>
       <p>If you want to build disruptive technology, challenge the status quo, and help creators thrive on their own terms—we’d like to talk.</p>
 
-      <h3>Meet Some of Our Team</h3>
+      <h3 class="section-title lg">Meet Some Of Our Team</h3>
       <div class="team-grid">
         <div class="team-card">
           <div class="team-avatar"><img src="chris.jpg" alt="Chris Faught"></div>
@@ -84,7 +98,7 @@
         </div>
       </div>
 
-      <h3>What We've Been Up To</h3>
+      <h3 class="section-title lg">What We've Been Up To</h3>
       <div class="embed-grid">
         <div class="embed">
           <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7336275237153447937?collapsed=1" height="582" allowfullscreen title="LinkedIn post"></iframe>
