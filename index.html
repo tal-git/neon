@@ -14,6 +14,7 @@
       --muted:#4b5563;
       --brand:#67f28f; /* light neon green from site accents */
       --link:#0a66c2;  /* LinkedIn blue for clarity */
+      --about-bg: #f8fafc;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
@@ -21,6 +22,34 @@
     a{color:var(--link); text-decoration:none}
     a:hover{text-decoration:underline}
     .wrap{max-width:880px; margin:0 auto; padding:28px 16px 60px}
+    .about-top {
+      background: var(--about-bg);
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 24px 18px;
+      margin-bottom: 30px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+    .about-top h2 {
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-weight: 700;
+      letter-spacing: .1px;
+    }
+    .about-top h3 {
+      font-size: 17px;
+      margin-bottom: 7px;
+      font-weight: 600;
+      margin-top: 18px;
+    }
+    .about-top p {
+      margin-top: 0;
+      margin-bottom: 14px;
+      color: var(--fg);
+      font-size: 15px;
+      line-height: 1.6;
+    }
     header{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:8px 0 20px; border-bottom:1px solid #e5e7eb}
     .brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.2px}
     .brand .mark{width:10px; height:10px; border-radius:3px; background:var(--brand); box-shadow:0 0 0 3px rgba(103,242,143,.2)}
@@ -45,6 +74,14 @@
 </head>
 <body>
   <div class="wrap">
+    <div class="about-top">
+      <h2>About Neon</h2>
+      <p>Neon is a global payments and e-commerce platform built to give game publishers more revenue and independence from app stores. We believe commerce should be open and transparent—clear data, aligned incentives, and actionable insights.</p>
+      <p>Founded by veterans of payments, fintech, and gaming, Neon is replacing black-box incumbents with modern, developer-first infrastructure. We share the playbook, co-pilot key decisions, and take on the risk and complexity so our partners can focus on players.</p>
+      <h3>Why join</h3>
+      <p>As an early team member you’ll shape both the product and the culture. You’ll work alongside colleagues from Apple, Affirm, Unity, Visa and others, backed by investors including Thrive, a16z, Griffin Gaming, Ribbit, and Renegade. Your work will have direct impact on Neon’s growth and on the success of game creators worldwide.</p>
+      <p>If you want to build disruptive technology, challenge the status quo, and help creators thrive on their own terms—we’d like to talk.</p>
+    </div>
     <header>
       <div class="brand"><span class="mark" aria-hidden="true"></span><h1>Neon — Team</h1></div>
       <div class="sub">Direct‑to‑player commerce • Merchant‑of‑Record</div>
@@ -69,7 +106,7 @@
 
     <section class="media">
       <h2>Recent highlight</h2>
-      <img alt="Neon team photo" src="https://media.licdn.com/dms/image/v2/D5622AQGzMIjcApGTUQ/feedshare-shrink_800/B56ZlTHWrLJoAg-/0/1758036061480?e=1761177600&v=beta&t=uu4K8p0YNizK_pGcIwdA-WGsaa1PSxXhlG5KZJnNsjU" />
+      <img alt="Neon team photo" src="https://media.licdn.com/dms/image/v2/D5622AQGzMIjcApGTUQ/feedshare-shrink_800/B56ZlTHWrLJoAg-/0/1758036061480?e=1761177600&v=beta&t=uu4K8p0YNizK_pGcIwdA-WGsaa1PSx[...]
     </section>
 
     <section>
