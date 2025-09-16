@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Neon — Team One‑Pager</title>
-  <meta name="description" content="Quick overview of the Neon team and links for candidates." />
+  <title>Neon — Join Us!</title>
+  <meta name="description" content="The Neon Team" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,9 +12,12 @@
     :root{
       --fg:#0b1020;
       --muted:#4b5563;
-      --brand:#67f28f; /* light neon green from site accents */
-      --link:#0a66c2;  /* LinkedIn blue for clarity */
-      --about-bg: #f8fafc;
+      --brand:#67f28f; /* neon accent */
+      --link:#0a66c2;  /* LinkedIn blue */
+      --line:#e5e7eb;
+      --glow1:#7C5CFF; /* violet */
+      --glow2:#00E0FF; /* cyan */
+      --glow3:#67f28f; /* neon green */
     }
     *{box-sizing:border-box}
     html,body{height:100%}
@@ -22,213 +25,68 @@
     a{color:var(--link); text-decoration:none}
     a:hover{text-decoration:underline}
     .wrap{max-width:880px; margin:0 auto; padding:28px 16px 60px}
-    .about-top {
-      background: var(--about-bg);
-      border: 1px solid #e5e7eb;
-      border-radius: 10px;
-      padding: 24px 18px;
-      margin-bottom: 30px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-    }
-    .about-top h2 {
-      font-size: 20px;
-      margin-top: 0;
-      margin-bottom: 8px;
-      font-weight: 700;
-      letter-spacing: .1px;
-    }
-    .about-top h3 {
-      font-size: 17px;
-      margin-bottom: 7px;
-      font-weight: 600;
-      margin-top: 18px;
-    }
-    .about-top p {
-      margin-top: 0;
-      margin-bottom: 14px;
-      color: var(--fg);
-      font-size: 15px;
-      line-height: 1.6;
-    }
-    .team-section {
-      margin: 32px 0 0 0;
-    }
-    .team-section h3 {
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 16px;
-      margin-top: 0;
-    }
-    .team-grid {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-bottom: 24px;
-    }
-    .team-card {
-      flex: 1 1 210px;
-      max-width: 320px;
-      background: #fff;
-      border: 1px solid #e5e7eb;
-      border-radius: 10px;
-      padding: 15px 18px 18px 18px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.03);
-    }
-    .team-avatar {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      background: #f3f4f6;
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      border: 1px solid #e5e7eb;
-      font-size: 32px;
-      color: #d1d5db;
-    }
-    .team-card .profile-title {
-      font-weight: 700;
-      font-size: 15px;
-      margin-bottom: 2px;
-    }
-    .team-card .sub {
-      font-size: 14px;
-      color: var(--muted);
-      margin-bottom: 8px;
-    }
-    .team-card a {
-      margin-top: 6px;
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--link);
-      border: 0;
-      background: none;
-      padding: 0;
-    }
-    .what-section {
-      margin-top: 36px;
-      margin-bottom: 12px;
-    }
-    .what-section h3 {
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 16px;
-      margin-top: 0;
-    }
-    .what-grid {
-      display: grid;
-      gap: 18px;
-      grid-template-columns: repeat(2, minmax(0,1fr));
-      margin-bottom: 8px;
-    }
-    @media (max-width:780px){
-      .team-grid, .what-grid {grid-template-columns:1fr; flex-direction:column;}
-    }
-    header{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:8px 0 20px; border-bottom:1px solid #e5e7eb}
+    header{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:8px 0 16px; border-bottom:1px solid var(--line)}
     .brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.2px}
-    .brand .mark{width:10px; height:10px; border-radius:3px; background:var(--brand); box-shadow:0 0 0 3px rgba(103,242,143,.2)}
+    .brand .mark{width:10px; height:10px; border-radius:3px; background:var(--brand); box-shadow:0 0 0 4px rgba(103,242,143,.18)}
     h1{font-size:22px; margin:0}
     .sub{color:var(--muted); font-size:14px}
-    section{padding:20px 0}
-    h2{font-size:16px; margin:0 0 10px}
-    .card{border:1px solid #e5e7eb; border-radius:10px; padding:14px}
-    .row{display:flex; gap:14px; flex-wrap:wrap}
-    .col{flex:1 1 280px}
-    .social a{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border:1px solid #e5e7eb; border-radius:999px; font-weight:600}
-    .media img{max-width:100%; height:auto; border:1px solid #e5e7eb; border-radius:10px}
-    .profile-card{border:1px solid #e5e7eb; border-radius:8px; padding:12px}
-    .profile-title{font-weight:700}
-    footer{margin-top:28px; padding-top:16px; border-top:1px solid #e5e7eb; color:#6b7280; font-size:13px}
+
+    /* Social row */
+    .social{display:flex; gap:12px; justify-content:center; margin:18px 0 26px}
+    .pill{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border:1px solid var(--line); border-radius:999px; font-weight:600; background:#fff}
+
+    /* Main card */
+    .about{margin:0 auto; max-width:760px; border:1px solid var(--line); border-radius:14px; padding:22px 20px; text-align:center; background:#fff; box-shadow:0 6px 24px rgba(0,0,0,.04)}
+    .about h2{font-size:20px; margin:0 0 10px}
+    .about h3{font-size:16px; margin:16px 0 10px}
+    .about p{margin:0 0 12px; line-height:1.6}
+    .accent{height:3px; width:100%; border-radius:3px; background:linear-gradient(90deg,var(--glow1),var(--glow2),var(--glow3)); opacity:.7; margin:14px 0 18px}
+
+    /* Embeds */
+    .embed-grid{display:grid; gap:16px; grid-template-columns:repeat(2,minmax(0,1fr)); margin-top:12px}
+    @media (max-width:820px){.embed-grid{grid-template-columns:1fr}}
+    .embed-grid .embed{display:flex; justify-content:center}
+    .embed iframe{width:504px; max-width:100%; border:0}
+
+    footer{margin-top:28px; padding-top:16px; border-top:1px solid var(--line); color:#6b7280; font-size:13px; text-align:center}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="about-top">
-      <h2>About Neon</h2>
-      <p>Neon is a global payments and e-commerce platform built to give game publishers more revenue and independence from app stores. We believe commerce should be open and transparent—clear data, aligned incentives, and actionable insights.</p>
-      <p>Founded by veterans of payments, fintech, and gaming, Neon is replacing black-box incumbents with modern, developer-first infrastructure. We share the playbook, co-pilot key decisions, and take on the risk and complexity so our partners can focus on players.</p>
-      <h3>Why join</h3>
-      <p>As an early team member you’ll shape both the product and the culture. You’ll work alongside colleagues from Apple, Affirm, Unity, Visa and others, backed by investors including Thrive, a16z, Griffin Gaming, Ribbit, and Renegade. Your work will have direct impact on Neon’s growth and on the success of game creators worldwide.</p>
-      <p>If you want to build disruptive technology, challenge the status quo, and help creators thrive on their own terms—we’d like to talk.</p>
-      <div class="team-section">
-        <h3>Meet Some of our Team</h3>
-        <div class="team-grid">
-          <div class="team-card">
-            <div class="team-avatar">
-              <!-- Placeholder for avatar, could be replaced with <img src="" alt="Chris Faught"> -->
-              <span>👤</span>
-            </div>
-            <div class="profile-title">Chris Faught</div>
-            <div class="sub">Founder &amp; CEO</div>
-            <a href="https://www.linkedin.com/in/cpfaught/" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-          <div class="team-card">
-            <div class="team-avatar">
-              <!-- Placeholder for avatar, could be replaced with <img src="" alt="Rohan Ramchand"> -->
-              <span>👤</span>
-            </div>
-            <div class="profile-title">Rohan Ramchand</div>
-            <div class="sub">Engineering</div>
-            <a href="https://www.linkedin.com/in/rramchand/" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-      <div class="what-section">
-        <h3>What We've been up to</h3>
-        <div class="what-grid">
-          <div class="embed">
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7336275237153447937?collapsed=1" height="582" allowfullscreen title="LinkedIn post"></iframe>
-          </div>
-          <div class="embed">
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7371034999317258240?collapsed=1" height="659" allowfullscreen title="LinkedIn post"></iframe>
-          </div>
-        </div>
-        <p class="sub" style="margin-top:8px">Tip: LinkedIn allows embedding public posts and videos. Profiles themselves do not allow iframe embedding; use profile cards with links.</p>
-      </div>
-    </div>
+    <!-- Header -->
     <header>
       <div class="brand"><span class="mark" aria-hidden="true"></span><h1>Neon — Team</h1></div>
       <div class="sub">Direct‑to‑player commerce • Merchant‑of‑Record</div>
     </header>
-    <section>
-      <div class="row">
-        <div class="col">
-          <h2>About</h2>
-          <p class="sub">Neon powers D2C webshops for mobile & PC games. We handle payments, fraud, tax, and global compliance so studios can focus on play.</p>
+
+    <!-- Social links centered -->
+    <nav class="social">
+      <a class="pill" href="https://www.linkedin.com/company/neonpay/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="pill" href="https://twitter.com/neoncommerce" target="_blank" rel="noopener">Twitter / X</a>
+      <a class="pill" href="https://www.neonpay.com/" target="_blank" rel="noopener">neonpay.com</a>
+    </nav>
+
+    <!-- Main recruiting section centered under header + socials -->
+    <section class="about">
+      <h2>About Neon</h2>
+      <div class="accent" aria-hidden="true"></div>
+      <p>Neon is a global payments and e‑commerce platform built to give game publishers more revenue and independence from app stores. We believe commerce should be open and transparent—clear data, aligned incentives, and actionable insights.</p>
+      <p>Founded by veterans of payments, fintech, and gaming, Neon is replacing black‑box incumbents with modern, developer‑first infrastructure. We share the playbook, co‑pilot key decisions, and take on the risk and complexity so our partners can focus on players.</p>
+      <h3>Why join</h3>
+      <p>As an early team member you’ll shape both the product and the culture. You’ll work alongside colleagues from Apple, Affirm, Unity, Visa and others, backed by investors including Thrive, a16z, Griffin Gaming, Ribbit, and Renegade. Your work will have direct impact on Neon’s growth and on the success of game creators worldwide.</p>
+      <p>If you want to build disruptive technology, challenge the status quo, and help creators thrive on their own terms—we’d like to talk.</p>
+
+      <h3 style="margin-top:18px">What we've been up to</h3>
+      <div class="embed-grid">
+        <div class="embed">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7336275237153447937?collapsed=1" height="582" allowfullscreen title="LinkedIn post"></iframe>
         </div>
-        <div class="col">
-          <h2>Links</h2>
-          <div class="row social">
-            <a href="https://www.linkedin.com/company/neonpay/" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://twitter.com/neoncommerce" target="_blank" rel="noopener">Twitter / X</a>
-            <a href="https://www.neonpay.com/" target="_blank" rel="noopener">neonpay.com</a>
-          </div>
+        <div class="embed">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7371034999317258240?collapsed=1" height="659" allowfullscreen title="LinkedIn post"></iframe>
         </div>
       </div>
     </section>
-    <section class="media">
-      <h2>Recent highlight</h2>
-      <img alt="Neon team photo" src="https://media.licdn.com/dms/image/v2/D5622AQGzMIjcApGTUQ/feedshare-shrink_800/B56ZlTHWrLJoAg-/0/1758036061480?e=1761177600&v=beta&t=uu4K8p0YNizK_pGcIwdA-WGsaa1PSx[...]">
-    </section>
-    <section>
-      <h2>People</h2>
-      <div class="row">
-        <div class="col profile-card">
-          <div class="profile-title">Rohan Ramchand</div>
-          <div class="sub">Engineering • Payments & Platforms</div>
-          <div style="margin-top:8px">
-            <a href="https://www.linkedin.com/in/rramchand/" target="_blank" rel="noopener">View LinkedIn profile</a>
-          </div>
-        </div>
-        <!-- Duplicate the block above for more people as needed. -->
-      </div>
-    </section>
+
     <footer>
       Recruiting page for candidates. Not an official Neon site. © <span id="y"></span> Neon.
     </footer>
